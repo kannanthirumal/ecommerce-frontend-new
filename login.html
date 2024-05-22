@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ecommerce Application | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+  </head>
+
+  <body>
+    <div id="loginPage">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <div class="row">
+            <a class="navbar-brand" href="index.html">Ecommerce</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <!-- Title -->
+          <h2 class="home-title text-center">Welcome to Ecommerce</h2>
+
+          <!-- Login -->
+          <div class="login-wrapper" id="loginForm">
+            <h4 class="text-center">Login</h4>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                id="loginUsername"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                id="loginPassword"
+              />
+            </div>
+            <div class="input-group">
+              <button class="form-control btn btn-primary" id="loginBtn">
+                Log in as User
+              </button>
+            </div>
+            <div class="signup-btn text-center text-info" id="showSignupBtn">
+              Dont have an Account ? Signup
+            </div>
+
+            <!-- Succ Error Message -->
+            <!-- <div
+              class="auth-error-msg text-danger text-center"
+              id="authErrMsgLogin"
+            ></div>
+            <div
+              class="auth-error-msg text-success text-center"
+              id="succErrMsgLogin"
+            ></div> -->
+          </div>
+
+          <!-- Signup -->
+          <div class="login-wrapper d-none" id="signupForm">
+            <h4 class="text-center">Signup</h4>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                id="signupUsername"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                id="signupPassword"
+              />
+            </div>
+
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email"
+                id="signupEmail"
+              />
+            </div>
+
+            <div class="input-group">
+              <button class="form-control btn btn-primary" id="signupBtn">
+                Signup as User
+              </button>
+            </div>
+            <div class="signup-btn text-center text-info" id="showLoginBtn">
+              Already have an Account ? Login
+            </div>
+
+            <!-- Succ Error Message -->
+            <!-- <div
+              class="auth-error-msg text-danger text-center"
+              id="authErrMsgSignup"
+            ></div>
+            <div
+              class="auth-error-msg text-success text-center"
+              id="succErrMsgSignup"
+            ></div> -->
+          </div>
+
+          <!-- Loading and Error Box -->
+          <div class="loading-error-wrapper" id="loadingErrorWrapper">
+            <!-- auth error -->
+            <div
+              class="auth-error-msg text-danger text-center"
+              id="authErrMsg"
+            ></div>
+            <div
+              class="auth-error-msg text-success text-center"
+              id="succErrMsg"
+            ></div>
+            <!-- This is spinner -->
+            <div class="spinner-container text-center d-none" id="authSpinner">
+              <div
+                class="spinner-border text-primary text-center"
+                role="status"
+              >
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>
